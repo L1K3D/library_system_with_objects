@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{656E0D56-C7A3-4C74-A0B9-39643AFB8568}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>atividade_25._04._2023</RootNamespace>
+    <AssemblyName>atividade_25.04.2023</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tela_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Principal.Designer.cs">
+      <DependentUpon>Tela_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Sistema_Usuario_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Sistema_Usuario_Principal.Designer.cs">
+      <DependentUpon>Tela_Sistema_Usuario_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Excluir_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Excluir_Usuario.Designer.cs">
+      <DependentUpon>Tela_Excluir_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Cadastrar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Cadastrar_Usuario.Designer.cs">
+      <DependentUpon>Tela_Cadastrar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Sistema_Livro_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Sistema_Livro_Principal.Designer.cs">
+      <DependentUpon>Tela_Sistema_Livro_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Devolver_Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Devolver_Livro.Designer.cs">
+      <DependentUpon>Tela_Devolver_Livro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Excluir_Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Excluir_Livro.Designer.cs">
+      <DependentUpon>Tela_Excluir_Livro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Cadastrar_Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Cadastrar_Livro.Designer.cs">
+      <DependentUpon>Tela_Cadastrar_Livro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Emprestar_Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Emprestar_Livro.Designer.cs">
+      <DependentUpon>Tela_Emprestar_Livro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Tela_Principal.resx">
+      <DependentUpon>Tela_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Sistema_Usuario_Principal.resx">
+      <DependentUpon>Tela_Sistema_Usuario_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Excluir_Usuario.resx">
+      <DependentUpon>Tela_Excluir_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Cadastrar_Usuario.resx">
+      <DependentUpon>Tela_Cadastrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Sistema_Livro_Principal.resx">
+      <DependentUpon>Tela_Sistema_Livro_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Devolver_Livro.resx">
+      <DependentUpon>Tela_Devolver_Livro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Excluir_Livro.resx">
+      <DependentUpon>Tela_Excluir_Livro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Cadastrar_Livro.resx">
+      <DependentUpon>Tela_Cadastrar_Livro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Emprestar_Livro.resx">
+      <DependentUpon>Tela_Emprestar_Livro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
